@@ -1,0 +1,10 @@
+{{ block title }}Regret questions{{ endblock }}
+{{ block content }}
+<p>Please answer using a scale from 1 to 7.</p>
+<p>1 = Not at all<br>7 = Extremely</p>
+{{ formfield 'regret_sell_recovery' }}
+{{ formfield 'regret_hold_decline' }}
+{{ formfield 'regret_realize_loss' }}
+{{ formfield 'regret_missed_gain' }}
+{{ next_button }}
+{{ endblock }}

@@ -1,0 +1,15 @@
+{{ block title }}Background questions{{ endblock }}
+{{ block content }}
+<p>Please answer the following questions.</p>
+{{ formfield 'age' }}
+{{ formfield 'gender' }}
+{{ formfield 'investment_experience' }}
+{{ formfield 'finance_courses' }}
+<p><strong>Which of the following asset types are you familiar with?</strong></p>
+{{ formfield 'known_assets_stocks' }}
+{{ formfield 'known_assets_bonds' }}
+{{ formfield 'known_assets_crypto' }}
+{{ formfield 'known_assets_funds' }}
+{{ formfield 'known_assets_real_estate' }}
+{{ next_button }}
+{{ endblock }}

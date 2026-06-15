@@ -1,0 +1,24 @@
+{{ block title }}Investment scenarios{{ endblock }}
+{{ block content }}
+<p>Please read each scenario carefully. In each case, imagine that you bought one share for EUR 100. Please choose whether you would sell or hold the investment.</p>
+<p><em>Condition shown for testing only: {{ condition_label }}</em></p>
+<table class="table">
+    <tr>
+        <th>Scenario</th>
+        <th>Investment situation</th>
+        <th>Your decision</th>
+    </tr>
+    {{ for s in scenarios }}
+    <tr>
+        <td>{{ s.number }}</td>
+        <td>
+            You bought the stock for <strong>EUR {{ s.purchase }}</strong>.<br>
+            It is now worth <strong>EUR {{ s.current }}</strong>.<br>
+            {{ s.info }}
+        </td>
+        <td>{{ formfield s.field label="" }}</td>
+    </tr>
+    {{ endfor }}
+</table>
+{{ next_button }}
+{{ endblock }}

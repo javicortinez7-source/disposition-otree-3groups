@@ -1,0 +1,9 @@
+{{ block title }}Confidence and risk attitude{{ endblock }}
+{{ block content }}
+<p>Please answer using a scale from 1 to 7.</p>
+<p>1 = Very low<br>7 = Very high</p>
+{{ formfield 'confidence' }}
+{{ formfield 'perceived_skill' }}
+{{ formfield 'risk_tolerance' }}
+{{ next_button }}
+{{ endblock }}
